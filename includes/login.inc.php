@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         $_SESSION["user_username"] = htmlspecialchars($result["username"]);
         $_SESSION["last_regeneration"] = time();
 
-        header("Location:../index.php?login=success");
+        header("Location:../products.php?login=success");
 
         $pdo = null;
         $stmt = null;
